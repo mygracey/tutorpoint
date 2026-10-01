@@ -794,6 +794,9 @@ h2{
         order:2;
         margin-bottom:4rem;
     }
+    .home .banner .text-box p{
+        width:auto;
+    }
    .home .benefits{
     flex-wrap: wrap;
     margin-top:0.5rem;

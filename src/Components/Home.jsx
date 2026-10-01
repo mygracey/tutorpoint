@@ -105,7 +105,7 @@ function Home(){
                                 <p>Location: London</p>
                                 <FaStar className="icon"/> <FaStar className="icon"/> <FaStar className="icon"/> <FaStar className="icon"/> <FaStar className="icon"/>
                             </div>
-                            <p>During my last semester in school, I found some mathematical concepts really difficult to understand like mixed fractions and so on, my tutor on TutorPoint made them so easy for me to understand. Thanks a lot TutorPoint!</p>
+                            <p>During my last semester at school, I found some mathematical concepts really difficult to understand like mixed fractions and so on, my tutor on TutorPoint made them so easy for me to understand. Thanks a lot TutorPoint!</p>
                         </div>
 
                         <div id="slider-2">
