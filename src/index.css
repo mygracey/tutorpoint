@@ -1,0 +1,1009 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border: 0;
+    outline:0;
+    font-family: sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+:root{
+    --primary-color:rgb(3, 34, 65);
+}
+
+.container{
+    padding-left:16%;
+    padding-right:16%;
+}
+h2{
+    color:gray;
+}
+
+.navbar{
+    width:100vw;
+    height:4rem;
+    background:white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    z-index:1000;
+}
+ .navbar .logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navbar .logo .icon{
+    margin-bottom:0.2rem;
+    color:dodgerblue;
+
+ }
+
+ .navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+ }
+ .navbar ul .link{
+    font-size:0.9rem;
+    color:black;
+ }
+
+ .navbar ul .link.login{
+    padding:1rem 2rem;
+    background:dodgerblue;
+    color:white;
+    border-radius: 30px;
+ }
+
+ .navbar .open{
+    font-size:1.3rem;
+    cursor:pointer;
+    display:none;
+ }
+ .navbar .close{
+    font-size:1.3rem;
+    cursor:pointer;
+    display: none;
+ }
+
+/* End of Navbar Styling */
+
+.home{
+    width:100vw;
+    height: auto;
+}
+
+.home .banner{
+    padding-top:4rem;
+    width:100%;
+    height:80vh;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    background:dodgerblue;
+    color:white;
+    /* gap:1rem; */
+    
+}
+
+
+.home .banner .text-box{
+    
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.home .banner h1{
+    font-size:2.5rem;
+    /* width:600px; */
+}
+
+.home .banner p{
+    font-size:1rem;
+    width:500px;
+}
+
+.home .banner .tutor{
+    color:yellow;
+}
+
+.home .banner img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
+/* .home .banner .image-grid{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0.5rem;
+    
+} */
+
+.home .banner .btn-get-started{
+    padding:1rem 2rem;
+    background:white;
+    color:dodgerblue;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top:1rem;
+}
+
+.home .benefits{
+    width:100vw;
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    border-radius: 1rem;
+    margin:0 auto;
+   
+}
+
+.home .benefits .card{
+    width:12.5rem;
+    height:10rem;
+    margin:0.5rem;
+    padding:1rem;
+    background:whitesmoke;
+    overflow-y: hidden;
+}
+
+.home .benefits .card .icon{
+    font-size:1.3rem;
+}
+
+.home .benefits .card.card2{
+    background:greenyellow;
+}
+
+.courses{
+    width:100vw;
+    height:fit-content;
+    background:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:3rem;
+    z-index:-1000;
+    
+}
+.courses p{
+    color:gray;
+}
+
+.courses .courses-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+   
+}
+
+.courses .courses-wrapper .card{
+   width:150px;
+   padding:0.5rem;
+   position:relative;
+   left:2rem;
+
+}
+
+/* End of Styling Home*/
+
+.about{
+    width:100vw;
+    min-height:calc(100vh - 8rem);
+}
+.about p{
+    color:black;
+    font-size:1rem;
+}
+
+.about .banner-section{
+    padding-top:4rem;
+}
+
+.about .banner-section h2{
+    font-size:2rem;
+}
+.about .banner-section p{
+    color:white;
+    margin-top:0.5rem;
+}
+
+.about .about-us h2{
+    margin-bottom:0.5rem;
+    text-align:center;
+}
+
+.about .about-us{
+    padding-top:3rem;
+    text-align:center;
+}
+
+.about .vision-mission{
+    padding-top:2rem;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.about .vision-mission h3{
+    color:gray;
+    margin-top:0.5rem;
+}
+
+.about .about-us-cta{
+    padding-top:3rem;
+    text-align:center;
+    background:dodgerblue;
+    padding-bottom: 3rem;
+}
+
+.about .about-us-cta h3{
+    color:white;
+    font-size:2rem;
+    
+}
+.about .about-us-cta .icon{
+    font-size:4rem;
+    color:yellow;
+}
+
+.about .about-us-cta p{
+    font-size:1rem;
+    color:white;
+    margin-bottom: 1.5rem;
+}
+
+.about .about-us-cta #tutor{
+    color:yellow;
+}
+
+.about .about-us-cta .btn-cta{
+    padding:1rem 2rem;
+    background:white;
+    color:dodgerblue;
+    cursor:pointer;
+    border-radius:30px;
+    cursor:pointer;
+}
+.banner-section{
+    width:100%;
+    height:70vh;
+    background:dodgerblue;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    gap:1rem;
+}
+.banner-section .text-box{
+    
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction:column;
+    /* background:red; */
+}
+.text-box .btn-about{
+    padding:1rem 2rem;
+    color:dodgerblue;
+    background:white;
+    display:block;
+    margin-top:1rem;
+    letter-spacing:1px;
+    border-radius:30px;
+}
+
+.text-box #simple{
+    color:yellow;
+}
+.banner-section h2,p{
+    color:white;
+}
+
+.banner-section img{
+    width:300px;
+    height: 300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
+
+.benefits .card p{
+    color:black;
+}
+
+/* End of About Us Styling*/
+
+.testimonials{
+    width:100vw;
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:3rem;
+    z-index:-1000;
+}
+.slider-wrapper{
+    position:relative;
+    max-width:48rem;
+    margin:0 auto;
+    padding-top:2rem;
+}
+
+.slider-wrapper .slider{
+    display:flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    background:whitesmoke;
+    gap:1rem;
+
+}
+.slider-wrapper .slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .slider div{
+    flex:1 0 100%;
+    scroll-snap-align:start;
+    text-align: center;
+    padding:2rem;
+}
+
+
+.testimonials .slider-wrapper .slider img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:4px solid dodgerblue;
+    
+}
+.testimonials .slider-wrapper .slider .icon{
+    color:gold;
+}
+.testimonials p{
+    color:gray;
+}
+
+.slider-nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:1rem;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:1;
+}
+
+.slider-nav a{
+    width:10px;
+    height:10px;
+    background:dodgerblue;
+    border-radius:50%;
+}
+
+/* End of Testimonial Styling*/
+
+.cta-container{
+ width:100vw;
+ height:fit-content;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background:dodgerblue;
+ gap:1rem;
+ margin-top:1rem;
+}
+
+.cta-container h2{
+    color:greenyellow;
+    font-size:2rem;
+}
+
+.cta-container p{
+    text-align:center;
+    font-size:0.9rem;
+}
+.cta-container img{
+    width:12rem;
+    height:12rem;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* End of CTA Styling */
+
+.loginpage{
+    padding-top:4rem;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:whitesmoke;
+}
+
+.loginpage form{
+    width:400px;
+    height:fit-content;
+    padding:1rem;
+    background:white;
+    box-shadow: 0 0 2px rgb(224, 218, 218);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:1rem;
+    border-radius:4px;
+}
+
+.loginpage form p{
+    margin-top:1rem;
+    color:dodgerblue;
+}
+
+.loginpage form input{
+    width:100%;
+    height:2.5rem;
+    border:0;
+    border-bottom: 2px solid dodgerblue;
+    margin:-0.3rem;
+    font-size:1rem;
+    text-align:center;
+}
+.loginpage form button{
+    padding:0.8rem 2rem;
+    background:dodgerblue;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+
+.loginpage form input::placeholder{
+    color:dodgerblue;
+    text-align:center;
+}
+
+.loginpage form h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* End of Login Styling*/
+
+.registerpage{
+    padding-top:4rem;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:whitesmoke; 
+}
+.registerpage form{
+    width:400px;
+    height:fit-content;
+    padding:1rem;
+    background:white;
+    box-shadow: 0 0 2px rgb(224, 218, 218);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:1rem;
+    border-radius:4px;
+}
+.registerpage form h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.registerpage form p{
+    margin-top:1rem;
+    color:dodgerblue;
+}
+
+.registerpage form input{
+    width:100%;
+    height:2.5rem;
+    border:0;
+    border-bottom: 2px solid dodgerblue;
+    margin:-0.3rem;
+    font-size:1rem;
+    text-align:center;
+}
+.registerpage form button{
+    padding:0.8rem 2rem;
+    background:dodgerblue;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+
+.registerpage form input::placeholder{
+    color:dodgerblue;
+    text-align:center;
+}
+
+.tutorpage{
+ padding-top:4rem;
+ width:100vw;
+ min-height: 100vh;
+ background:whitesmoke;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.tutorpage form{
+    width:60rem;
+    height:3rem;
+    margin-bottom: 1rem;
+    border:2px solid var(--primary-color);
+    border-radius:30px;
+}
+
+.tutorpage form input{
+    width:100%;
+    height:100%;
+    overflow-y:hidden;
+    outline:0;
+    font-size:1rem;
+    text-align:center;
+}
+
+.tutorpage form input::placeholder{
+    color:gray;
+    font-size:1rem;
+    text-align:center;
+}
+
+.tutorpage .tutorImage{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.tutorpage table{
+    width:60rem;
+    height:fit-content;
+}
+
+.tutorpage table td{
+    text-align:center;
+
+}
+
+.tutorpage .btn-logout{
+    padding:1rem 2rem;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border:none;
+    border-radius: 30px;
+    font-size:0.9rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+
+}
+.tutorpage .tutorpage-access-message{
+    width:100%;
+    margin-top:1rem;
+    gap:1rem;
+}
+.tutorpage .access-message{
+    font-size:0.9rem;
+    text-align:center;
+    padding-left:1rem;
+    color:dodgerblue;
+}
+
+/* End of TutorPage Styling*/
+
+.contactpage{
+    padding-top:4rem;
+    width:100vw;
+    min-height:calc(100vh - 8rem);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:whitesmoke;
+}
+
+.contactpage h2{
+    margin-top:3rem;
+}
+
+.contactpage p{
+    color:black;
+    text-align:center;
+    margin-top:0.5rem;
+}
+.contactpage form{
+    width:60rem;
+    height: fit-content;
+    background:white;
+    box-shadow: 0 0 2px rgb(241, 236, 236);
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.contactpage form input{
+    width:100%;
+    height:2.5rem;
+    border:0;
+    border-bottom:2px solid dodgerblue;
+    padding-left:0.5rem;
+    text-align:center;
+    font-size:1rem;
+}
+
+.contactpage form input::placeholder{
+    color:dodgerblue;
+    font-size:1rem;
+}
+
+.contactpage form textarea{
+    font-size:1rem;
+    width:100%;
+    min-height:150px;
+    max-height:200px;
+    padding-left:0.5rem;
+    border:0;
+    border-bottom:2px solid dodgerblue;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+}
+
+.contactpage form textarea::placeholder{
+    color:dodgerblue;
+    font-size:1rem;
+}
+.contactpage form button{
+    padding:1rem 2rem;
+    background:dodgerblue;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    border-radius: 4px;
+}
+
+.errorpage{
+    width:100vw;
+    height:calc(100vh - 8rem);
+    background:whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.errorpage h2{
+    font-size: 2rem;
+}
+
+.errorpage .btn-error{
+    padding:1rem 2rem;
+    background:dodgerblue;
+    color:white;
+    letter-spacing: 1px;
+    margin-top:1rem;
+    border-radius: 30px;
+}
+
+.footer{
+    width:100vw;
+    height:4rem;
+    background:var(--primary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:0.8rem;
+}
+
+
+
+
+
+/* Tablet Responsiveness*/
+
+@media(max-width:800px){
+    .navbar{
+        max-width:800px;
+        position:fixed;
+        z-index:1000px;
+    }
+    .navbar ul{
+        position:fixed;
+        width:12.5rem;
+        height:300px;
+        padding:1rem;
+        top:4rem;
+        bottom:0;
+        right:-12.5rem;
+        background:rgba(4, 39, 74,0.9);
+        flex-direction: column;
+        transition:0.5s ease-in;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .navbar ul .link{
+        color:white;
+        margin:0.5rem;
+        overflow-y:hidden;
+    }
+
+    .navbar ul .link:hover{
+        color:yellow;
+    }
+
+    .show-mobile-menu{
+        right:0;
+    }
+
+    .navbar .open{
+        display:block;
+    }
+     
+    .home .banner{
+        
+        padding-top:4rem;
+        grid-template-columns: 1fr;
+        gap:0;
+        justify-content: center;
+    }
+    .home .banner img{
+        width:300px;
+        height:300px;
+        margin-top:4rem;
+    }
+    .home .banner .text-box{
+        order:2;
+        margin-bottom:4rem;
+    }
+   .home .benefits{
+    flex-wrap: wrap;
+    margin-top:0.5rem;
+   
+   }
+
+   .courses{
+    height: fit-content;
+   }
+   .courses .courses-wrapper{
+    flex-wrap:wrap;
+   }
+   .testimonials .slider{
+    width:350px;
+    height: 500px;
+   }
+
+   .home .cta-container img{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit:cover;
+   }
+
+   .home .cta-container h2{
+    font-size:1.5rem;
+    text-align:center;
+   }
+
+    .about .banner-section{
+        padding-top:4rem;
+        grid-template-columns: 1fr;
+    }
+
+    .about .banner-section .text-box{
+        order:2;
+        margin-bottom:4rem;
+    }
+
+    .about .banner-section img{
+        margin-top:4rem;
+        width:300px;
+        height:300px;
+    }
+    .about .about-us-cta{
+        max-width:800px;
+    }
+
+    .about .about-us-cta h3{
+        font-size:1.5rem;
+        text-align:center;
+    }
+    .about .about-us-cta p{
+        margin-bottom:2rem;
+    }
+
+    .loginpage{
+        padding-top:4rem;
+        min-height:100vh;
+    }
+    .registerpage{
+        padding-top:4rem;
+        min-height:100vh;
+    }
+    .contactpage{
+        padding-top:4rem;
+        height:100vh;
+    }
+    .contactpage p{
+        text-align:center;
+        width:auto;
+    }
+    .contactpage form{
+        width:30rem;
+    }
+    .tutorpage{
+        max-width:800px;
+    }
+
+    .tutorpage form{
+        width:320px;
+    }
+    .tutorpage form input::placeholder{
+        font-size:0.8rem;
+    }
+    .tutorpage .tutorImage{
+        width:80px;
+        height:80px;
+    }
+
+    .tutorpage table{
+        width:40rem;
+        margin-left:4rem;
+    }
+    .tutorpage table th{
+        width:200px;
+    }
+
+    .tutorpage .table-container{
+        width:100%;
+        overflow-x: auto;
+    }
+   
+
+    .errorpage{
+        height:100vh;
+    }
+}
+
+
+@media(max-width:600px){
+    .navbar{
+        max-width:600px;
+    }
+    .home .banner{
+        height:100vh;
+        
+    }
+    .home .banner h1{
+        font-size:1.5rem;
+    }
+
+    .home .banner img{
+        width:300px;
+        height:300px;
+        margin-top:4rem;
+    }
+
+    .home .banner .text-box{
+        margin-bottom:4rem;
+    }
+
+    .home .cta-container{
+        padding-bottom:0.5rem;
+        padding-top:1rem;
+    }
+    
+    .home .cta-container img{
+       
+        display: none;
+    }
+    .home .cta-container h2{
+        font-size: 1rem;
+    }
+    
+
+    .about .banner-section{
+        height:fit-content;
+        justify-content: center;
+    }
+
+    .about .about-us p{
+        width:auto;
+    }
+
+    .about .vision-mission h3{
+        margin-bottom:0.5rem;
+    }
+    
+    .about .banner-section img{
+        width:300px;
+        height:300px;
+        /* margin-bottom:3rem; */
+    }
+
+    .about .about-us-cta h3{
+        line-height: 1;
+        overflow-y: hidden;
+        margin-bottom: 0.5rem;
+    }
+    .registerpage form{
+        width:320px;
+    }
+    .loginpage form{
+        width:320px;
+    }
+    .contactpage p{
+        font-size:0.9rem;
+    }
+    .contactpage form{
+        width:320px;
+    }
+
+    .tutorpage{
+        max-width:600px;
+    }
+    .tutorpage table{
+        width:40rem;
+    }
+
+    .tutorpage table td{
+        font-size:0.9rem;
+    }
+
+    .tutorpage .table-container{
+        width:100%;
+        overflow-x:auto;
+    }
+
+   .errorpage h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+}
+
+
+
+
+
+
+/* Mobile Responsiveness*/
